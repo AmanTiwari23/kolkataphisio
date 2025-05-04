@@ -1,107 +1,169 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family:"DM Sans", serif;
-    box-sizing: border-box;
-}
-.logo-img{
-    width: 80px;
-}
-.header{
-    position: fixed;
-    top: 0;
-    background-color:#153C33 ;
-    box-shadow: 1px 4px 20px hsla(207, 24%, 35%,0.1);
-    width: 100%;
-    z-index: 1000;
-    
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", serif;
+  box-sizing: border-box;
 }
 
-.header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #153c33;
+  --secondary-color: #e6efed;
+  --text-color: #153c33b3;
+  --accent-color: #619e90;
+  --white-color: #ffffff;
+  --divider-color: #ffffff26;
+  --dark-divider-color: #153c331a;
+  --error-color: rgb(230, 87, 87);
+}
+
+.logo-img {
+  width: 80px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #153c33;
+  box-shadow: 1px 4px 20px hsla(207, 24%, 35%, 0.1);
+  width: 100%;
+  z-index: 1000;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
 }
 
 .logo a {
-    font-size: 24px;
-    color: #fff;
+  font-size: 24px;
+  color: #fff;
 }
 
-.menu{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    
- 
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu a{
-    display: block;
-    padding: 7px 15px;
-    font-size: 17px;
-    text-decoration: none;
-    color:white ;
-    font-weight: 500;
-    transition: 0.2s all ease-in-out;
+.menu a {
+  display: block;
+  padding: 7px 15px;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
 }
 
-.menu:hover a{
-    opacity: 0.4;
+.menu:hover a {
+  opacity: 0.4;
 }
 
-.menu a:hover{
-    opacity: 1;
-    color: #fff;
+.menu a:hover {
+  opacity: 1;
+  color: #fff;
 }
 
 .menu-icon {
-    display: none;
+  display: none;
 }
 
-#menu-toggle{
-    display: none;
+#menu-toggle {
+  display: none;
 }
 
 #menu-toggle:checked ~ .menu {
-     transform: scale(1,1);
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    background-color: #151418;
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .menu a {
+    margin-left: 12px;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+
+.unipadding {
+  padding: 120px 60px 60px 60px;
+}
+
+h2{
+    font-size: 4em;
+    font-weight: 800;
 }
 
 
-@media only screen and (max-width: 950px){
-
-    .menu {
-        flex-direction: column;
-        background-color: #151418;
-        align-items: start;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        transform: scale(1,0);
-        transform-origin : top;
-        transition: transform 0.3s ease-in-out;
-        box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
-    }
-
-    .menu a {
-        margin-left: 12px;
-        
-    }
-
-    .menu li{
-        margin-bottom: 10px;
-    }
-    
-    .menu-icon{
-        display: block;
-        color: #fff;
-        font-size: 28px;
-        cursor: pointer;
-    }
+h3{
+    font-size: 3em;
+    font-weight: 800;
 }
 
+p {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
 
+.default_button {
+  display: inline-block;
+  padding: 15px 55px 15px 20px;
+   text-decoration: none;
+  background: var(--accent-color);
+  color: var(--white-color);
+  font-size: 1em;
+  text-transform: capitalize;
+  border-radius: 60px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-weight: 600; 
+}
+
+.default_button::before{
+  content: '';
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  background-image: ;
+}

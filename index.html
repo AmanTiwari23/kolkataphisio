@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kolkata Physio</title>
+
+    
+
+    
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+   <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fontawsome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -11,28 +27,67 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="header">
+    <!-- Header -->
+    <header class="header">
       <nav>
         <div class="logo">
           <a href="index.html"
             ><img src="./asset/logo.svg" alt="logo" class="logo-img" />
           </a>
         </div>
-        <input type="checkbox" id="menu-toggle">
+        <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </label>
         <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="home unipadding" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- hero content -->
+            <div class="hero-content">
+              <h3>Destination For Relief & Wellnes</h3>
+              <h2>Welcome To Kolkata Physio</h2>
+              <p>
+                we're dedicated to helping you live a pain-free and active life.
+                Our team of experienced physiotherapists provides personalized
+                care tailored to your unique needs.
+              </p>
+
+              <!-- cta -->
+              <div class="hero-button-box">
+                <a href="#service" class="default_button">Explore Services</a>
+                <a href="#contact" class="default_button light_btn">book appointment</a>
+            </div>
+
+            <span class="divider"></span>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
