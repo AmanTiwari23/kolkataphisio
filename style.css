@@ -87,7 +87,6 @@ body {
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .row {
@@ -426,7 +425,6 @@ p {
   padding: 20px;
 }
 
-
 .common_section_img img {
   width: 100%;
 }
@@ -452,7 +450,6 @@ p {
   justify-content: center;
   align-content: center;
   overflow: hidden;
- 
 }
 
 .col-lg-3 {
@@ -639,37 +636,37 @@ p {
   transform: scale(1.05);
 }
 
-.clients{
+.clients {
   background-image: url(/asset/asset\ 67.svg);
   background-color: #e6efed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-
 }
 
-.client-title{
+.client-title {
   text-align: center;
   margin: 0 auto;
   max-width: 700px;
 }
 
-.client{
+.client {
   margin: 30px 0;
   color: #153c33;
 }
 
 .client-container{
-  
-  flex: 0 0 100%;
-  max-width: 100%;
   height: 100%;
+  justify-content: center;
+  align-content: center;
   
 }
-
-
+.slider-container{
+  display: flex;
+  justify-content: center;
+}
 .client-box{
-  height: 100%;
+  max-width: 700px;
   padding: 30px;
   background-color: white;
   position: relative;
@@ -677,13 +674,19 @@ p {
   border: 2px solid white;
 }
 
-.slide-container{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.client-box p {
+  font-size: 1em;
+  text-align: left;
 }
+
+.client-name{
+     position: absolute;
+     bottom: 10px;
+     right: 20px;
+     font-size: 1.05em;
+     text-transform: capitalize;
+}
+
 
 @media only screen and (max-width: 950px) {
   .hero-col {
